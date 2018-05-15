@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace Array
 {
@@ -48,7 +49,17 @@ namespace Array
             {
                 Console.WriteLine(x);
             }
+
+
+            Console.WriteLine("\nObservable");
+            ObservableCollection<int> observableCollection = new ObservableCollection<int>() { 4,3,2,1 };
+            foreach(var x in observableCollection)
+            {
+                Console.Write(x+" ");
+            }
             Console.ReadKey();
+
+
         }
     }
 }
